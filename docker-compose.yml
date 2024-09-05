@@ -5,7 +5,7 @@ services:
     container_name: nodejs_boilerplate_be
     build: .
     entrypoint: >
-      sh -c "cd /app && npm run migrate:up && nodemon index.js"
+      sh -c "cd /app && npm run migrate:up && npx nodemon index.js"
     ports:
       - '3000:3000'
     depends_on:
